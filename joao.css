@@ -1,0 +1,79 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(15deg, #000000, #ffffff);
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+header h1 {
+    margin: 0;
+}
+main {
+    padding: 50px;
+}
+.team-info {
+    display:contents;
+    align-items: center;
+}
+.team-info img {
+    float: left;
+    margin-right: 20px;
+    opacity: 0.8;
+    box-shadow: 10px 10px 10px  rgb(0, 0, 0);
+
+}
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+}
+
+p::first-letter {
+    font-size: 2em;
+    color: #353434;
+}
+
+h2 {
+    text-align: center
+}
+
+section {
+    text-align: center;
+}
+
+h1 {
+  font-family: "Danfo", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "ELSH" 0;
+}
+
+h2 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+p {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  nav a {
+    font-family: "Permanent Marker", cursive;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    width: 150%;
+  }
