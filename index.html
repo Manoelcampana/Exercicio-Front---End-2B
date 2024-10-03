@@ -1,34 +1,52 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>pagina iniciaL</title>
-    <link rel="stylesheet" href="joao.css"> 
-     <script type="text/javascript">
-        let listacompras = ['leite', 'ovo', 'pao'];
-        for(let i = 0; i < listacompras.legth; i++) {
-            alert('Eu necessito comprar' + listacompra[i]);
+    <title>Exemplo de Operadores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
         }
-     </script>
-     <script type="text/javascript">
-        let listacompras = ['leite','ovo','pao','feijao','alface','macarrao','farinha','carne']
-        listacompras.push('arroz');
-        listacompras.push('carne');
-        console.log('eu necessito comprar'+ listacompras[0]);
-        console.log('eu necessito comprar'+ listacompras[1]);
-        console.log('eu necessito comprar'+ listacompras[2]);
-        console.log('eu necessito comprar'+ listacompras[3]);
-        console.log('eu necessito comprar'+ listacompras[4]);
-        console.log('eu necessito comprar'+ listacompras[5]);
-        console.log('eu necessito comprar'+ listacompras[6]);
-        console.log('eu necessito comprar'+ listacompras[7]);
-        console.log('eu necessito comprar'+ listacompras[8]);
-
-
-     </script>
+        .resultado {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-   
+    <h1>Exemplo de Operadores em JavaScript</h1>
+
+    <div id="resultados"></div>
+
+    <script>
+        let a = 10;
+        let b = 5;
+
+        let soma = a + b;
+        let subtracao = a - b;
+        let multiplicacao = a * b;
+        let divisao = a / b;
+
+        let maior = a > b; // true
+        let menor = a < b; // false
+        let igual = a === b; // false
+
+        let condicao1 = (a > 0) && (b > 0); // true
+        let condicao2 = (a < 0) || (b > 0); // true
+
+        
+        const resultadosDiv = document.getElementById('resultados');
+        resultadosDiv.innerHTML += `<div class="resultado">Soma: ${soma}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">Subtração: ${subtracao}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">Multiplicação: ${multiplicacao}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">Divisão: ${divisao}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">A: ${a} é maior que B: ${b}? ${maior}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">A: ${a} é menor que B: ${b}? ${menor}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">A: ${a} é igual a B: ${b}? ${igual}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">A e B são positivos? ${condicao1}</div>`;
+        resultadosDiv.innerHTML += `<div class="resultado">A é negativo ou B é positivo? ${condicao2}</div>`;
+    </script>
 </body>
 </html>
